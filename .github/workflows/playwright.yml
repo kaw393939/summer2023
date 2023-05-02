@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: |
           apt-get update
-          apt-get install -y libgbm-dev chromium       
+          apt-get install -y libgbm-dev chromium-browser     
           npm ci
           npx playwright install chromium
           npm install -g lighthouse chrome-launcher axe-core chromium wait-on
